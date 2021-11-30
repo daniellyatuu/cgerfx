@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  {% include 'includes/header.html' %}
+
+  {% block extra_header %}
+
+  {% endblock %}
+
+</head>
+
+<body id="bg">
+
+  <div class="page-wraper">
+
+    <!-- MENU START -->
+    {% include 'includes/menu.html' %}
+    <!-- MENu END -->
+
+    <!-- CONTENT START -->
+    {% block content %} {% endblock %}
+    <!-- CONTENT END -->
+
+    <!-- FOOTER CONTENT START -->
+    {% include 'includes/footer_content.html' %}
+    <!-- FOOTER CONTENT END -->
+
+
+    <!-- BUTTON TOP START -->
+    <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>Top</button>
+
+  </div>
+
+  <!-- LOADING AREA START ===== -->
+  <div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+      <div class="cssload-container">
+        <div class="cssload-dot bg-primary"><i class="fa fa-bitcoin"></i></div>
+        <div class="step" id="cssload-s1"></div>
+        <div class="step" id="cssload-s2"></div>
+        <div class="step" id="cssload-s3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- LOADING AREA  END ====== -->
+
+  {% include 'includes/footer.html' %}
+
+  {% block extra_footer %}
+
+  {% endblock %}
+
+</body>
+
+</html>

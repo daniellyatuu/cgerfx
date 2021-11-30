@@ -1,0 +1,101 @@
+{% load static %}
+
+{% url 'main:home_page' as home_page %}
+{% url 'main:broker_list' as broker_list %}
+{% url 'main:forex_documents' as forex_documents %}
+{% url 'main:blog_post' as blog_post %}
+{% url 'main:tutorial_video_list' as tutorial_video_list %}
+
+<header class="site-header header-style-3 topbar-transparent">
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="clearfix">
+          <div class="wt-topbar-left">
+            <ul class="list-unstyled e-p-bx pull-left">
+              <li><i class="fa fa-envelope"></i>info@cgerfx.com</li>
+              <li><i class="fa fa-phone"></i>(+255) 653-765-456</li>
+            </ul>
+          </div>
+
+          <div class="wt-topbar-right">
+
+
+            <ul class="list-unstyled e-p-bx pull-right">
+              <li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sticky-header main-bar-wraper">
+    <div class="main-bar">
+      <div class="container">
+
+        <div class="logo-header mostion">
+          <a href="index.html">
+            <img src="{% static 'images/logo-2.png' %}" width="230" height="67" alt="" />
+          </a>
+        </div>
+
+        <!-- NAV Toggle Button -->
+        <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- SITE Search -->
+        <div id="search">
+          <span class="close"></span>
+          <form role="search" id="searchform" action="https://thewebmax.com/search" method="get" class="radius-xl">
+            <div class="input-group">
+              <input value="" name="q" type="search" placeholder="Type to search" />
+              <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search"></i></button></span>
+            </div>
+          </form>
+        </div>
+
+        <!-- MAIN Vav -->
+        <div class="header-nav navbar-collapse collapse ">
+          <ul class=" nav navbar-nav">
+            <li class="{% if home_page == request.path %}active{% endif %}">
+              <a href="{% url 'main:home_page' %}">Home</a>
+            </li>
+
+            <li class="{% if broker_list == request.path %}active{% endif %}">
+              <a href="{% url 'main:broker_list' %}">Brokers</a>
+            </li>
+
+            <li class="{% if forex_documents == request.path %}active{% endif %}">
+              <a href="{% url 'main:forex_documents' %}">Forex Docs</a>
+            </li>
+
+            <!-- <li class="">
+              <a href="#">Calendar</a>
+            </li> -->
+
+            <li class="">
+              <a href="#">Trading Account</a>
+            </li>
+
+            <li class="{% if blog_post == request.path %}active{% endif %}">
+              <a href="{{blog_post}}">Blog</a>
+            </li>
+
+            <li class="{% if tutorial_video_list == request.path %}active{% endif %}">
+              <a href="{% url 'main:tutorial_video_list' %}">Video</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
