@@ -1,0 +1,104 @@
+{% extends 'master/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- CONTENT START -->
+<div class="page-content">
+
+  <!-- INNER PAGE BANNER -->
+  <div class="wt-bnr-inr overlay-wraper" style="background-image:url({% static 'images/banner/blog-banner.jpg' %});">
+    <div class="overlay-main bg-black opacity-07"></div>
+    <div class="container">
+      <div class="wt-bnr-inr-entry">
+        <h1 class="text-white">Forex Books And PDF Tutorials</h1>
+      </div>
+    </div>
+  </div>
+  <!-- INNER PAGE BANNER END -->
+
+  <!-- BREADCRUMB ROW -->
+  <div class="bg-gray-light p-tb20">
+    <div class="container">
+      <ul class="wt-breadcrumb breadcrumb-style-2">
+        <li><a href="{% url 'main:home_page' %}"><i class="fa fa-home"></i> Home</a></li>
+        <li>forex books and pdf</li>
+      </ul>
+    </div>
+  </div>
+  <!-- BREADCRUMB ROW END -->
+
+  <!-- SECTION CONTENT START -->
+  <div class="section-full p-t80 p-b50">
+    <div class="container">
+
+      <!-- BLOG POST START -->
+
+      <!-- COLUMNS 1 -->
+      <div class="blog-post blog-md date-style-1 clearfix">
+
+        <div class="wt-post-info">
+
+          <div class="wt-post-title ">
+            <h3 class="post-title"><a href="javascript:void(0);">Book One</a></h3>
+          </div>
+
+          <div class="wt-post-text">
+            <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt soluta iste repellendus officia in neque veniam debitis</p>
+          </div>
+          <div class="clearfix">
+            <div class="wt-post-readmore pull-left">
+              <a href="javascript:void(0);" title="Visit" rel="bookmark" class="site-button-link">Download Book</a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- COLUMNS 2 -->
+      <div class="blog-post blog-md date-style-1 clearfix">
+
+        <div class="wt-post-info">
+
+          <div class="wt-post-title ">
+            <h3 class="post-title"><a href="javascript:void(0);">PDF Document</a></h3>
+          </div>
+
+          <div class="wt-post-text">
+            <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt soluta iste repellendus officia in neque veniam debitis</p>
+          </div>
+          <div class="clearfix">
+            <div class="wt-post-readmore pull-left">
+              <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">Download Document</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BLOG POST END -->
+
+      <!-- PAGINATION START -->
+      <div class="pagination-bx clearfix">
+        <ul class="custom-pagination pagination">
+          <li><a href="#">&laquo;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+      <!-- PAGINATION END -->
+
+    </div>
+  </div>
+  <!-- SECTION CONTENT END -->
+
+</div>
+<!-- CONTENT END -->
+
+{% endblock %}
