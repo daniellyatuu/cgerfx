@@ -1,0 +1,77 @@
+{% extends 'master/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- CONTENT START -->
+<div class="page-content">
+
+  <!-- INNER PAGE BANNER -->
+  <div class="wt-bnr-inr overlay-wraper" style="background-image:url({% static 'images/banner/about-banner.jpg' %});">
+    <div class="overlay-main bg-black opacity-07"></div>
+    <div class="container">
+      <div class="wt-bnr-inr-entry">
+        <h1 class="text-white">About Cgerfx</h1>
+      </div>
+    </div>
+  </div>
+  <!-- INNER PAGE BANNER END -->
+
+  <!-- BREADCRUMB ROW -->
+  <div class="bg-gray-light p-tb20">
+    <div class="container">
+      <ul class="wt-breadcrumb breadcrumb-style-2">
+        <li><a href="javascript:void(0);"><i class="fa fa-home"></i> Home</a></li>
+        <li>About Cgerfx</li>
+      </ul>
+    </div>
+  </div>
+  <!-- BREADCRUMB  ROW END -->
+
+  <!-- ABOUT COMPANY SECTION START -->
+  <div class="section-full p-tb100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="section-head text-left">
+
+            <h2 class="text-uppercase">About Cgerfx </h2>
+            <span class="wt-title-subline text-gray-dark font-16 m-b15">A new kind of money</span>
+            <div class="wt-separator-outer">
+              <div class="wt-separator bg-primary"></div>
+            </div>
+            <p style="text-align: justify;">
+              <strong>Cgerfx.com</strong> is the top international guide to online financial
+              markets trading which gives all traders opportunity to be
+              consistent profitable traders. Beginners who are learning how
+              to trade should read our many tutorials and watch videos to get
+              practical tips for online trading. Experienced intraday and swing
+              traders can explore more advanced topics such as automated trading
+              and how to make a living on the financial markets.
+            </p>
+
+            <p style="text-align: justify;">
+              <strong>Cgerfx.com</strong> exists to protect newbie traders from losing
+              all their money in the forex market either from their own poor trading
+              decisions or from being bamboozled by the Brotherhood of Evil Marketing
+              Wizards, the retail forex industry’s equivalent of snake oil salesmen
+              who lure the innocent with foolish claims of easy money and holy grails.
+              We created cgerfx.com to be a trustworthy resource for Currency trader,
+              Indices traders alongside Bitcoin traders.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="wt-media">
+            <img src="{%static 'images/gallery/pic3.jpg' %}" alt="" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT COMPANY SECTION END -->
+
+</div>
+<!-- CONTENT END -->
+
+{% endblock %}

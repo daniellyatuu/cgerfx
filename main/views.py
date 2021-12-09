@@ -11,6 +11,27 @@ class HomePageView(View):
         context['title'] = 'Cgerfx'
         return render(request, self.template_name, context)
 
+class AboutUsView(View):
+
+    template_name = 'main/about_us.html'
+
+    def get(self, request, *args, **kwargs):
+
+        context = {}
+        context['title'] = 'About Cgerfx'
+        return render(request, self.template_name, context)
+
+
+class LearnMoreDerivView(View):
+
+    template_name = 'main/learn_more_deriv.html'
+
+    def get(self, request, *args, **kwargs):
+
+        context = {}
+        context['title'] = 'Deriv'
+        return render(request, self.template_name, context)
+
 
 class BrokerListView(View):
 
