@@ -345,7 +345,7 @@
                                 {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                 {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                 ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;">
-                  <a href="javascript:;" class="site-button slider-btn-left">Learn More</a>
+                  <a href="{% url 'main:learn_more_xm' %}" class="site-button slider-btn-left">Learn More</a>
                 </div>
 
                 <!-- LAYER NR. 7 [ for more detail botton ] -->
@@ -624,36 +624,14 @@
       <div class="section-content no-col-gap">
         <div class="row">
 
-          <!-- COLUMNS 1 -->
-          <div class="col-md-4 col-sm-6 animate_line">
-            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
-              <div class="icon-lg text-primary m-b20">
-                <a href="#" class="icon-cell"><img src="{% static 'images/icon/pick-29.png' %}" alt=""></a>
-              </div>
-              <div class="icon-content">
-                <h4 class="wt-tilte text-uppercase font-weight-500">Instant Trading</h4>
-              </div>
-            </div>
-          </div>
           <!-- COLUMNS 2 -->
           <div class="col-md-4 col-sm-6 animate_line">
             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
               <div class="icon-lg text-primary m-b20">
-                <a href="#" class="icon-cell"><img src="{% static 'images/icon/pick-28.png' %}" alt=""></a>
+                <a href="{% url 'main:beginner_guide' %}" class="icon-cell"><img src="{% static 'images/icon/pick-28.png' %}" alt=""></a>
               </div>
               <div class="icon-content ">
-                <h4 class="wt-tilte text-uppercase font-weight-500">Beginners Guide</h4>
-              </div>
-            </div>
-          </div>
-          <!-- COLUMNS 3 -->
-          <div class="col-md-4 col-sm-6 animate_line">
-            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
-              <div class="icon-lg text-primary m-b20">
-                <a href="#" class="icon-cell"><img src="{% static 'images/icon/pick-17.png' %}" alt=""></a>
-              </div>
-              <div class="icon-content">
-                <h4 class="wt-tilte text-uppercase font-weight-500">Intermediate Guide</h4>
+                <h4 class="wt-tilte text-uppercase font-weight-500"><a href="{% url 'main:beginner_guide' %}">Forex Training</a></h4>
               </div>
             </div>
           </div>
@@ -666,17 +644,6 @@
               </div>
               <div class="icon-content">
                 <h4 class="wt-tilte text-uppercase font-weight-500">Forex Library</h4>
-              </div>
-            </div>
-          </div>
-          <!-- COLUMNS 5 -->
-          <div class="col-md-4 col-sm-6 animate_line">
-            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5">
-              <div class="icon-lg text-primary m-b20">
-                <a href="#" class="icon-cell"><img src="{% static 'images/icon/pick-12.png' %}" alt=""></a>
-              </div>
-              <div class="icon-content">
-                <h4 class="wt-tilte text-uppercase font-weight-500">Stocks and CFDs Library</h4>
               </div>
             </div>
           </div>
