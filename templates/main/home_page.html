@@ -1,6 +1,59 @@
 {% extends 'master/base.html' %}
 {% load static %}
 
+{% block extra_header %}
+
+<style media="screen">
+  .row_bottom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* for centering 3 blocks in the center */
+    /* justify-content: space-between; for space in between */
+  }
+
+  .block_bottom {
+    width: 100px;
+
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+</style>
+
+{% endblock %}
+
 {% block content %}
 
 <div class="page-content">
@@ -105,7 +158,7 @@
                                 {"from":"y:200px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                 {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                 ]' style="z-index: 13;">
-                  <img src="{% static 'images/main-slider/slider2/earth.png' %}" alt="" class="spin-city">
+                  <img src="{% static 'images/main-slider/slider2/earth-old.png' %}" alt="" class="spin-city">
                 </div>
 
                 <!-- LAYER NR. 9 [ for more detail botton ] -->
@@ -113,7 +166,7 @@
                   data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeOut"},
                                 {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                   data-paddingleft="[0,0,0,0]" style="z-index: 13;">
-                  <img src="{% static 'images/main-slider/slider2/bitcoin.png' %}" alt="">
+                  <img src="{% static 'images/main-slider/slider2/bitcoin-old.png' %}" alt="">
                 </div>
 
 
@@ -163,7 +216,7 @@
                                 border-width:0px;">
 
                   <div style="font-family: 'Poppins', sans-serif; text-transform:uppercase; ">
-                    <span class="text-primary" style="padding-right:10px;">Trade 24/7</span>
+                    <span class="text-primary" style="padding-right:10px;">Get 120% Deposit</span>
                   </div>
 
                 </div>
@@ -179,7 +232,7 @@
                                 font-weight: 700;
                                 border-width:0px;">
                   <div style="font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
-                    <span class="text-white">With Deriv</span>
+                    <span class="text-white">Bonus with JF</span>
                   </div>
 
                 </div>
@@ -216,7 +269,7 @@
                                 text-transform:uppercase;
                                 font-weight:500;
                                 ">
-                  <a href="https://record.binary.com/_2_CXZDMi6HO6tyDIijdDK2Nd7ZgqdRLk/1" target="_blank" class="site-button white slider-btn-right">Register</a>
+                  <a href="https://justforex.com/landing/quick-start?ref=534988" target="_blank" class="site-button white slider-btn-right">Register</a>
                 </div>
 
                 <!-- LAYER NR. 8 [ for more detail botton ] -->
@@ -238,7 +291,7 @@
                   data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeOut"},
                                 {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                   data-paddingleft="[0,0,0,0]" style="z-index: 16;">
-                  <img src="{% static 'images/main-slider/slider2/rocket.png' %}" alt="" class="floating">
+                  <img src="{% static 'images/main-slider/slider2/rocket-old.png' %}" alt="" class="floating">
                 </div>
 
                 <!-- LAYER NR. 11 [ for more detail botton ] -->
@@ -246,7 +299,7 @@
                   data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":4000,"ease":"Power3.easeOut"},
                                 {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                   data-paddingleft="[0,0,0,0]" style="z-index: 15;">
-                  <img src="{% static 'images/main-slider/slider2/fire.gif' %}" alt="" class="floating">
+                  <img src="{% static 'images/main-slider/slider2/fire-old.gif' %}" alt="" class="floating">
                 </div>
 
                 <!-- LAYER NR. 12 [ for more detail botton ] -->
@@ -255,7 +308,7 @@
                                 {"from":"y:0px(R);opacity:0;","speed":2000,"to":"o:1;","delay":4000,"ease":"Power4.easeOut"},
                                 {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                 ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;">
-                  <div class="coin-slide bg-full-width bg-repeat-y coin-slide-rotate" style="background-image:url({% static 'images/main-slider/slider2/coin-sky.png' %});height:100vh;"></div>
+                  <div class="coin-slide bg-full-width bg-repeat-y coin-slide-rotate" style="background-image:url({% static 'images/main-slider/slider2/coin-sky-old.png' %});height:100vh;"></div>
                 </div>
 
               </li>
@@ -458,9 +511,9 @@
               <div class="col-md-12 col-sm-12">
                 <div class="call-to-action-left p-tb20 ">
                   <h4 class="text-uppercase m-b10 font-weight-600">Disclaimer</h4>
-                  <p style='text-align:justify;'>Before you begin carrying out transactions with an electronic system, you should carefully review the rules and provisions of the stock exchange offering the system, or of the financial instruments listed that you intend to
-                    trade, as well as your broker’s conditions. Online trading has inherent risks due to system responses/reaction times and access times that may vary due to market conditions, system performance and other factors, and on which you
-                    have no influence. You should be aware of these additional risks in electronic trading before you carry out investment transactions.</p>
+                  <p style='text-align:justify;'>Deriv offers complex derivatives, such as options and contracts for difference (“CFDs”). These products may not be suitable for all clients, and trading them puts you at risk. Please make sure that you
+                    understand the following risks before trading Deriv products: a) you may lose some or all of the money you invest in the trade, b) if your trade involves currency conversion, exchange rates will affect your profit and loss. You
+                    should never trade with borrowed money or with money that you cannot afford to lose.</p>
                 </div>
               </div>
 
@@ -852,6 +905,29 @@
     </div>
   </div>
   <!-- CONTACT US OFFER SECTION END  -->
+
+
+
+  <div class="navbar" style="z-Index: 100; white-space: nowrap; padding: 10px;">
+    <div class="row_bottom">
+      <div class="block_bottom" style="margin-right: 50px; font-size: 16px; color: white;">Our Top Broker <br> in Tanzania </div>
+      <div class="block_bottom">
+
+        <a href="https://www.xm.com/xm-forex-education-reaches-tanzania-ghana-ivory-coast-112218" class=" btn btn-outline-dark" style="background-color:#333333;">
+
+          <span style="font-size: 16px; color: white; font-weight: bold;">XM</span>
+
+          <img width="30" height="40" onclick="window.open('https://www.daytrading.com/xm','_self');" src="https://www.daytrading.com/wp-content/uploads/2019/02/XM_com-logo-130x80.png" alt="Top Broker Logo">
+        </a>
+
+      </div>
+      <div class="block_bottom" style="margin-left: 20px;">
+        <a href="https://www.xm.com/xm-forex-education-reaches-tanzania-ghana-ivory-coast-112218" class=" btn btn-info">Visit</a>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 </div>
