@@ -9,6 +9,7 @@ urlpatterns = [
     path('learn-more-deriv/', views.LearnMoreDerivView.as_view(), name='learn_more_deriv'),
     path('learn-more-xm/', views.LearnMoreXMView.as_view(), name='learn_more_xm'),
     path('beginner-guide/', views.BeginnerGuideView.as_view(), name='beginner_guide'),
+    path('trader-must-read/', views.TraderMustReadView.as_view(), name='trader_must_read'),
     path('broker-list/', views.BrokerListView.as_view(), name='broker_list'),
     path('forex-documents/', views.ForexDocumentsListView.as_view(), name='forex_documents'),
     path('blog-post/', views.BlogPostListView.as_view(), name='blog_post'),
