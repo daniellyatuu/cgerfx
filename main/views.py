@@ -97,3 +97,14 @@ class BeginnerGuideView(View):
         context = {}
         context['title'] = 'Beginner Guide'
         return render(request, self.template_name, context)
+
+
+class TraderMustReadView(View):
+
+    template_name = 'main/trader_must_read.html'
+
+    def get(self, request, *args, **kwargs):
+
+        context = {}
+        context['title'] = 'Beginner Guide'
+        return render(request, self.template_name, context)
