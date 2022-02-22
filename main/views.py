@@ -108,3 +108,13 @@ class TraderMustReadView(View):
         context = {}
         context['title'] = 'Beginner Guide'
         return render(request, self.template_name, context)
+
+class ForexLibraryView(View):
+
+    template_name = 'main/forex_library.html'
+
+    def get(self, request, *args, **kwargs):
+
+        context = {}
+        context['title'] = 'Forex Library'
+        return render(request, self.template_name, context)
